@@ -4,5 +4,8 @@
 # Ignore Virtual Environment
 .venv
 
+# Ignore .mov
+*.mov
+
 # Ignore pycache
 __pycache__
