@@ -2,8 +2,7 @@
 Reversi setup
 
 Prereqs:
-- Python 3.10+ (I used Python 3.12)
-
+- Python 3.10+ (We used Python 3.12)
 
 1) Install dependencies
     From the project directory, run:
