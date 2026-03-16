@@ -12,8 +12,16 @@ Prereqs:
         2. source .venv/bin/activate
         3. pip install -r requirements.txt
 
+    Windows:
+        1. Type (Control + Shift + p)
+        2. Select 'Python: Select Interpreter'
+        3. Select 'Create Virtual Environment'
+        4. Select 'venv'
+        5. Select 'requirements.txt'
+        6. Activate virtual environment by typing 'source .venv/Scripts/activate'
+
 2) Run game
-    Open 3 terminals in the project folder (with the same virtual environment activated using (source .venv/bin/activate))
+    Open 3 terminals in the project folder (with the same virtual environment activated using (source .venv/bin/activate) for mac)
 
     Terminal 1 (Reversi server):
     python3 reversi_server.py
