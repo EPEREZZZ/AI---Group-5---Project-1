@@ -12,13 +12,22 @@ Prereqs:
         2. source .venv/bin/activate
         3. pip install -r requirements.txt
 
-    Windows:
-        1. Type (Control + Shift + p)
-        2. Select 'Python: Select Interpreter'
-        3. Select 'Create Virtual Environment'
-        4. Select 'venv'
-        5. Select 'requirements.txt'
-        6. Activate virtual environment by typing 'source .venv/Scripts/activate'
+    Windows (PowerShell):
+        python -m venv .venv
+        .\.venv\Scripts\Activate.ps1
+        pip install -r requirements.txt
+
+    Windows (Command Prompt):
+        python -m venv .venv
+        .venv\Scripts\activate
+        pip install -r requirements.txt
+
+    Alternative (VS Code users)
+
+    1. Press Ctrl + Shift + P
+    2. Select "Python: Create Environment"
+    3. Choose "Venv"
+    4. Select requirements.txt
 
 2) Run game
     Open 3 terminals in the project folder (with the same virtual environment activated using (source .venv/bin/activate) for mac)
