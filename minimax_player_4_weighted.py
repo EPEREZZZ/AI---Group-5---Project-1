@@ -26,20 +26,10 @@ def vector_to_matrix(v):
 
 
 # Load learned weights from your trainer
-if os.path.exists('learned_weights.npy'):
-    LEARNED_MATRIX = vector_to_matrix(np.load('learned_weights.npy'))
+if os.path.exists('best_weights.npy'):
+    LEARNED_MATRIX = vector_to_matrix(np.load('best_weights.npy'))
 else:
-    # Baseline weights if file is missing
-    LEARNED_MATRIX = np.array([
-        [100, -20, -40, 15, 10, 10, -40, 100],
-        [-20, -50, -2, -2, -2, -2, -50, -20],
-        [-40, -2, 5, 1, 1, 5, -2, -40],
-        [15, -2, 1, 0, 0, 1, -2, 15],
-        [15, -2, 1, 0, 0, 1, -2, 15],
-        [-40, -2, 5, 1, 1, 5, -2, -40],
-        [-20, -50, -2, -2, -2, -2, -50, -20],
-        [100, -20, -40, 15, 10, 10, -40, 100]
-    ])
+    exit(0)
 
 # Constants
 CORNERS = [(0, 0), (0, 7), (7, 0), (7, 7)]
